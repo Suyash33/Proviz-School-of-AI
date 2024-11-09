@@ -1,16 +1,15 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import Router and Routing components
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
 import Hero from './components/Hero';
 import Features from './components/Feautures';
 import Testimonials from './components/Testimonials';
 import ApplicationForm from './components/ApplicationForm';
 import Footer from './components/Footer';
-import AdminPanel from './components/Adminpanel'; // Import the Admin Panel
-
+import AdminPanel from './components/Adminpanel'; 
 
 function App() {
   const [isApplicationFormOpen, setIsApplicationFormOpen] = useState(false);
-  const [isAdmin, setIsAdmin] = useState(true); // Assume user is admin for now, update based on logic
+  const [isAdmin, setIsAdmin] = useState(true); 
 
   return (
     <Router>
