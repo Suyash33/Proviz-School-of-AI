@@ -112,13 +112,3 @@ app.delete('/admin/submissions/:id', async (req, res) => {
 });
 
 
-// // Route to fetch all user data for the admin dashboard
-// app.get('/api/users', async (req, res) => {
-//   try {
-//     const users = await User.find();  // Fetch all users from MongoDB
-//     res.status(200).json(users);      // Send the data as JSON response
-//   } catch (error) {
-//     console.error('Error fetching user data:', error);
-//     res.status(500).send('Error fetching user data');
-//   }
-// });
